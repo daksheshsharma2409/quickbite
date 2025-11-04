@@ -7,13 +7,14 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #343333;
 }
 
 /* --- Navbar Container --- */
 .navbar {
   width: 100%;
   min-height: 4.4em;
-  background-color: #015491;
+  background-color: #e0af1f;
   border-radius: 0 0 15px 15px;
   position: fixed;
   top: 0;
@@ -39,10 +40,11 @@ body {
 }
 
 .pizzalogo:hover {
-  border: 1px solid white;
-  transition-duration: 0.5s;
-  transition-delay: 50ms;
+  border: 2px solid #343333;
+  /* transition-duration: 0.5s; */
+  /* transition-delay: 50ms; */
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .location-selector {
@@ -64,6 +66,11 @@ body {
   color: white;
 }
 
+.location-text:hover {
+  color: #343333;
+  transition: all 0.3s ease;
+}
+
 /* --- Right Side (Navigation) --- */
 .navbar-right .nav-list {
   display: flex;
@@ -81,8 +88,8 @@ body {
 }
 
 .navbar-right .nav-list li a:hover {
-  color: #015491;
-  background-color: white;
+  color: #e0af1f;
+  background-color: #343333;
   cursor: pointer;
 }
 
