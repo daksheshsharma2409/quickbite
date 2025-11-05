@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>About</title>
+    <link rel="stylesheet" href="css/delivery.css" />
+    <title>QuickBite - Order Online</title>
     <link
       rel="shortcut icon"
       href="images/pngtree-pizza-logo-transparent-image-free-for-online-download-png-image_16593606-removebg-preview.png"
@@ -28,16 +29,237 @@
           <span class="location-text">Please enter your location</span>
         </div>
       </div>
-
       <nav class="navbar-right">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a id="current" href="delivery.html">Delivery</a></li>
-          <li><a href="takeout.html">Takeout</a></li>
           <li><a href="dinein.html">Dine-In</a></li>
         </ul>
       </nav>
     </header>
+
+    <div class="page-content">
+      <div class="order-layout">
+        <nav class="category-nav">
+          <ul>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#burgers">Burgers</a></li>
+            <li><a href="#fries">Fries</a></li>
+            <li><a href="#misc">Miscellaneous</a></li>
+          </ul>
+        </nav>
+
+        <main class="menu-grid">
+          <section id="pizza" class="menu-category">
+            <h2>Pizza</h2>
+            <div class="category-items">
+              <div class="menu-item-card">
+                <img src="images/f3.png" alt="Margherita Pizza" />
+                <div class="item-info">
+                  <h3>Classic Margherita</h3>
+                  <p>Fresh mozzarella, San Marzano tomatoes, and basil.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$12.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/mi1.jpeg" alt="Pepperoni Pizza" />
+                <div class="item-info">
+                  <h3>Pepperoni Passion</h3>
+                  <p>Loaded with premium spicy pepperoni and mozzarella.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$14.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/f6.png" alt="Veggie Pizza" />
+                <div class="item-info">
+                  <h3>Veggie Supreme</h3>
+                  <p>Onions, green peppers, mushrooms, and black olives.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$15.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/f1.png" alt="BBQ Chicken Pizza" />
+                <div class="item-info">
+                  <h3>BBQ Chicken</h3>
+                  <p>Grilled chicken, red onions, and tangy BBQ sauce.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$16.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="burgers" class="menu-category">
+            <h2>Burgers</h2>
+            <div class="category-items">
+              <div class="menu-item-card">
+                <img src="images/f2.png" alt="Classic Burger" />
+                <div class="item-info">
+                  <h3>Classic Cheeseburger</h3>
+                  <p>Juicy patty with cheddar cheese, lettuce, and tomato.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$9.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/f7.png" alt="Bacon Burger" />
+                <div class="item-info">
+                  <h3>Fried Chicken Burger</h3>
+                  <p>
+                    Fried Chicken patty, Vegies, Swiss cheese, and house sauce.
+                  </p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$11.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/f8.png" alt="Spicy Burger" />
+                <div class="item-info">
+                  <h3>Spicy Jalapeño Grilled Chicken Burger</h3>
+                  <p>
+                    Spicy grilled chicken patty, pepper jack cheese, jalapeños,
+                    and chipotle mayo.
+                  </p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$10.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/served_food.jpg" alt="Veggie Burger" />
+                <div class="item-info">
+                  <h3>Veggie Burger</h3>
+                  <p>Crispy Potato patty with Vegies.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$10.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="fries" class="menu-category">
+            <h2>Fries</h2>
+            <div class="category-items">
+              <div class="menu-item-card">
+                <img src="images/f5.png" alt="Classic Fries" />
+                <div class="item-info">
+                  <h3>Classic Fries</h3>
+                  <p>Perfectly golden, crispy, and lightly salted.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$4.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/cheesy_fries.png" alt="Cheesy Fries" />
+                <div class="item-info">
+                  <h3>Cheesy Fries</h3>
+                  <p>Our classic fries smothered in hot cheese sauce.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$5.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/peri-peri-fries.jpg" alt="Peri Peri Fries" />
+                <div class="item-info">
+                  <h3>Peri Peri Fries</h3>
+                  <p>Tossed in a spicy and tangy peri peri seasoning.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$5.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/loaded-fries.jpg" alt="Loaded Fries" />
+                <div class="item-info">
+                  <h3>Loaded Supreme</h3>
+                  <p>Topped with cheese, bacon bits, and sour cream.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$7.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="misc" class="menu-category">
+            <h2>Miscellaneous</h2>
+            <div class="category-items">
+              <div class="menu-item-card">
+                <img src="images/mi3.jpg" alt="Garlic Bread" />
+                <div class="item-info">
+                  <h3>Cheesy Garlic Bread</h3>
+                  <p>Toasted with garlic butter and melted mozzarella.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$6.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/mi7.jpg" alt="Iced Coffee" />
+                <div class="item-info">
+                  <h3>Iced Coffee</h3>
+                  <p>Rich cold brew, perfectly refreshing.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$3.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/mi6.jpg" alt="Dessert" />
+                <div class="item-info">
+                  <h3>Choco Lava Cake</h3>
+                  <p>Warm molten chocolate cake. The perfect finish.</p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$5.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="menu-item-card">
+                <img src="images/pizza-pockets.jpeg" alt="Pizza Pockets" />
+                <div class="item-info">
+                  <h3>Pizza Pockets</h3>
+                  <p>
+                    Pizza Pockets filled with pizza sauce, pepperoni, molten
+                    cheese.
+                  </p>
+                </div>
+                <div class="item-price-add">
+                  <span class="price">$1.99</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
