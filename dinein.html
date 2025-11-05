@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>About</title>
+    <link rel="stylesheet" href="css/dinein.css" />
+    <title>QuickBite - Dine-In</title>
     <link
       rel="shortcut icon"
       href="images/pngtree-pizza-logo-transparent-image-free-for-online-download-png-image_16593606-removebg-preview.png"
@@ -28,7 +29,6 @@
           <span class="location-text">Please enter your location</span>
         </div>
       </div>
-
       <nav class="navbar-right">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -39,5 +39,96 @@
         </ul>
       </nav>
     </header>
+
+    <section class="page-content">
+      <div class="dine-in-hero">
+        <h1>Come Dine With Us</h1>
+        <p>Enjoy our best dishes, fresh from the kitchen.</p>
+      </div>
+
+      <div class="dine-in-content">
+        <div class="info-column">
+          <div class="card" id="reservation-card">
+            <h2>Make a Reservation</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-group-inline">
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" name="time" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5+ People</option>
+                </select>
+              </div>
+              <button type="submit" class="cta-button">Book Table</button>
+            </form>
+          </div>
+
+          <div class="card" id="hours-card">
+            <h2>Hours of Operation</h2>
+            <ul class="hours-list">
+              <li>
+                <span>Monday - Friday</span> <span>11:00 AM - 10:00 PM</span>
+              </li>
+              <li><span>Saturday</span> <span>10:00 AM - 11:00 PM</span></li>
+              <li><span>Sunday</span> <span>10:00 AM - 9:00 PM</span></li>
+            </ul>
+          </div>
+
+          <div class="card" id="location-card">
+            <h2>Our Location</h2>
+            <p>
+              123 Pizza Street<br />
+              Sonipat, Haryana, 131001
+            </p>
+            <a href="#" class="cta-link">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="visual-column">
+          <div class="card" id="gallery-card">
+            <h2>Our Vibe</h2>
+            <div class="photo-grid">
+              <img src="images/interior.jpeg" alt="Restaurant interior" />
+              <img src="images/served_food.jpg" alt="Plated food" />
+              <img src="images/sitting_area.jpg" alt="Dining area" />
+              <img src="images/hero-bg.jpg" alt="Restaurant exterior" />
+            </div>
+          </div>
+
+          <div class="card" id="map-card">
+            <h2>Find Us</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.882103328475!2d77.0177239150852!3d28.7528221823707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d00f6b150c953%3A0xe7f9758e578f7d88!2sSonipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1678886400000!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
