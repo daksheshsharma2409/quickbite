@@ -114,31 +114,24 @@ body {
   }
 }
 
-/* --- RESPONSIVENESS --- */
+/* --- 📱 RESPONSIVENESS --- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Was flex-start */
     gap: 15px;
     padding: 1em 2%;
   }
 
-  .navbar-right {
-    width: 100%;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .nav-list li {
-    width: 100%;
-  }
+  /* .navbar-right, .nav-list, .nav-list li are unchanged... */
 
   .nav-list li a {
     display: block;
-    text-align: left;
+    text-align: center; /* Was left */
   }
+
+  /* This rule from home.css also lives in a media query,
+     but it's for the section, not the navbar.
+     We will edit it in the next step.
+  */
 }

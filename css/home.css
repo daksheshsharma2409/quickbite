@@ -1,3 +1,4 @@
+/* --- General Section Styling --- */
 section {
   width: 100%;
   padding: 3em 4%;
@@ -7,6 +8,7 @@ section:first-of-type {
   padding-top: 8em;
 }
 
+/* --- 1. Order Menu Section --- */
 .order-menu {
   width: 100%;
 }
@@ -58,11 +60,13 @@ section:first-of-type {
   transition: all 0.3s ease;
 }
 
+/* --- 2. Specials Section (MODIFIED) --- */
 .specials {
   width: 100%;
 }
 
-.specials h1 {
+/* Style for the FIRST h1 ("Best Fries") */
+.specials .fries-title {
   color: #e0af1f;
   text-align: center;
   font-size: 24px;
@@ -70,6 +74,16 @@ section:first-of-type {
   margin-bottom: 1.5em;
 }
 
+/* NEW: Style for the OTHER h1s ("Pizza", "Burger") */
+.specials .specials-title {
+  color: #e0af1f;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 3em; /* Replaces inline 10% margin */
+  margin-bottom: 1.5em;
+}
+
+/* --- Fries 3-Column Holder --- */
 .specials .fries-holder {
   width: 100%;
   max-width: 1200px;
@@ -87,22 +101,38 @@ section:first-of-type {
   flex: 1 1 250px;
 }
 
-.specials .fries-holder video {
+/* NEW: Container for the single large videos */
+.wide-video-container {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 4px solid white;
+  max-width: 1200px; /* Constrains video on wide screens */
+  margin: 0 auto; /* Centers the container */
 }
 
-.specials .fries-holder video:hover {
-  border: 4px solid #e0af1f;
+/* --- UNIFIED VIDEO STYLES --- */
+/* This one rule now styles ALL videos in the specials section */
+.specials video {
+  width: 100%; /* Fill their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Fixes potential small gap below video */
+  border-radius: 10px;
+  border: 4px solid white;
   transition: all 0.3s ease;
 }
+
+.specials video:hover {
+  border-color: #e0af1f;
+  cursor: pointer;
+}
+
+/* REMOVED: .fries-holder video, .pizza-vid, .burger-vid styles
+   They are all replaced by the ".specials video" rule above.
+*/
 
 /* --- 📱 RESPONSIVENESS --- */
 @media (max-width: 768px) {
   section:first-of-type {
-    padding-top: 16em;
+    /* This pushes the content down below the tall, stacked mobile nav */
+    padding-top: 22em; /* Was 16em */
   }
 
   .order-menu p:first-child,
@@ -120,6 +150,10 @@ section:first-of-type {
   .specials .fries-holder .fries-vid-2,
   .specials .fries-holder .fries-vid-new {
     flex-basis: auto;
+    width: 90%;
+  }
+
+  .wide-video-container {
     width: 90%;
   }
 }
