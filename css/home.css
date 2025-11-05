@@ -33,7 +33,7 @@
 }
 
 .order-menu .menu-items .menu-item img:hover {
-  border: 3px solid #e0af1f;
+  border: 5px solid #e0af1f;
   transition: all 0.3s ease;
   cursor: pointer;
 }
