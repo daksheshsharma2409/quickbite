@@ -1,0 +1,114 @@
+section {
+  width: 100%;
+  padding: 3em 4%;
+}
+
+section:first-of-type {
+  padding-top: 8em;
+}
+
+.main-container h1 {
+  color: #e0af1f;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+.main-container p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.main-container h2 {
+  color: #e0af1f;
+  font-size: 1.8rem;
+}
+
+.main-container ul {
+  margin-top: 1em;
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.feature-container {
+  width: 100%;
+  height: 25rem;
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.feature-container .tcontainer {
+  width: 49%;
+  height: fit-content;
+  /* background-color: red; */
+  border: 5px solid white;
+  padding: 3rem;
+}
+
+.feature-container .gitcontainer {
+  width: 49%;
+  height: fit-content;
+  /* background-color: blue; */
+  border: 5px solid white;
+}
+
+.tcontainer:hover,
+.gitcontainer:hover {
+  border: 5px solid #e0af1f;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gitcontainer .gitstats {
+  width: 80%;
+  height: 2rem;
+  /* background-color: black; */
+  margin: 1rem auto;
+  align-content: center;
+}
+
+.gitcontainer .gitstats .gitbar {
+  width: 90%;
+  height: 30%;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.git-lang {
+  height: 100%;
+}
+
+.git-text {
+  /* background-color: red; */
+  width: 20%;
+  height: 6rem;
+  margin: 2rem auto 2rem;
+}
+
+#html-color,
+#css-color,
+#js-color {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.text-block {
+  display: inline;
+  margin-left: 1em;
+  color: white;
+}
+
+.ind-block {
+  margin: 0.5em;
+}
