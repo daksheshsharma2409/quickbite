@@ -1,6 +1,6 @@
-let html_per = 58;
-let css_per = 40;
-let js_per = 2;
+let html_per = 60;
+let css_per = 37.2;
+let js_per = 2.8;
 
 document.getElementById("html-bar").style.backgroundColor = "orange";
 document.getElementById("html-bar").style.width = `${html_per}%`;
