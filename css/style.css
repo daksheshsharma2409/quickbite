@@ -1,4 +1,3 @@
-/* --- Basic Reset --- */
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +6,15 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #343333;
+  background-color: #e9ecef;
+  color: #2c3e50;
 }
 
-/* --- Navbar Container --- */
 .navbar {
   z-index: 10;
   width: 100%;
   min-height: 4.4em;
-  background-color: #e0af1f;
+  background-color: #34568b;
   border-radius: 0 0 15px 15px;
   position: fixed;
   top: 0;
@@ -27,7 +26,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* --- Left Side (Logo + Location) --- */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -41,9 +39,7 @@ body {
 }
 
 .pizzalogo:hover {
-  border: 2px solid #343333;
-  /* transition-duration: 0.5s; */
-  /* transition-delay: 50ms; */
+  border: 2px solid #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -68,11 +64,10 @@ body {
 }
 
 .location-text:hover {
-  color: #343333;
+  color: #e9ecef;
   transition: all 0.3s ease;
 }
 
-/* --- Right Side (Navigation) --- */
 .navbar-right .nav-list {
   display: flex;
   list-style: none;
@@ -91,16 +86,16 @@ body {
 .navbar-right .nav-list li #current {
   padding: 10px 15px;
   border-radius: 20px;
-  background-color: #343333;
+  background-color: #e9ecef;
+  color: #34568b;
 }
 
 .navbar-right .nav-list li a:hover {
-  color: #e0af1f;
-  background-color: #343333;
+  color: #34568b;
+  background-color: #e9ecef;
   cursor: pointer;
 }
 
-/* --- Logo Animation --- */
 .rotate {
   animation: rotation 2s linear infinite;
 }
@@ -114,24 +109,28 @@ body {
   }
 }
 
-/* --- 📱 RESPONSIVENESS --- */
+@keyframes pulse-loader {
+  0% {
+    background-color: #e9ecef;
+  }
+  50% {
+    background-color: #f8f9fa;
+  }
+  100% {
+    background-color: #e9ecef;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center; /* Was flex-start */
+    align-items: center;
     gap: 15px;
     padding: 1em 2%;
   }
 
-  /* .navbar-right, .nav-list, .nav-list li are unchanged... */
-
   .nav-list li a {
     display: block;
-    text-align: center; /* Was left */
+    text-align: center;
   }
-
-  /* This rule from home.css also lives in a media query,
-     but it's for the section, not the navbar.
-     We will edit it in the next step.
-  */
 }

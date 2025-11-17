@@ -1,4 +1,3 @@
-/* --- General Section Styling --- */
 section {
   width: 100%;
   padding: 3em 4%;
@@ -8,14 +7,13 @@ section:first-of-type {
   padding-top: 8em;
 }
 
-/* --- 1. Order Menu Section --- */
 .order-menu {
   width: 100%;
 }
 
 .order-menu p:first-child,
 .specials p:first-child {
-  color: #e0af1f;
+  color: #34568b;
   font-size: 30px;
   text-align: center;
   margin-bottom: 1.5em;
@@ -35,55 +33,54 @@ section:first-of-type {
 }
 
 .order-menu .menu-items .menu-item img {
-  width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid white;
+  width: 120px;
+  border: 5px solid #f8f9fa;
+  background-color: #e9ecef;
+  animation: pulse-loader 1.5s infinite ease-in-out;
 }
 
 .order-menu .menu-items .menu-item img:hover {
-  border: 5px solid #e0af1f;
+  border: 5px solid #34568b;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .order-menu .menu-items .menu-item p {
-  color: white;
+  color: #2c3e50;
   font-size: 18px;
   text-align: center;
   margin-top: 0.5em;
 }
 
 .order-menu .menu-items .menu-item p:hover {
-  color: #e0af1f;
+  color: #34568b;
   transition: all 0.3s ease;
 }
 
-/* --- 2. Specials Section (MODIFIED) --- */
 .specials {
   width: 100%;
+  overflow: hidden;
 }
 
-/* Style for the FIRST h1 ("Best Fries") */
 .specials .fries-title {
-  color: #e0af1f;
+  color: #34568b;
   text-align: center;
   font-size: 24px;
   margin-top: -1em;
   margin-bottom: 1.5em;
 }
 
-/* NEW: Style for the OTHER h1s ("Pizza", "Burger") */
 .specials .specials-title {
-  color: #e0af1f;
+  color: #34568b;
   text-align: center;
   font-size: 24px;
-  margin-top: 3em; /* Replaces inline 10% margin */
+  margin-top: 3em;
   margin-bottom: 1.5em;
 }
 
-/* --- Fries 3-Column Holder --- */
 .specials .fries-holder {
   width: 100%;
   max-width: 1200px;
@@ -101,38 +98,34 @@ section:first-of-type {
   flex: 1 1 250px;
 }
 
-/* NEW: Container for the single large videos */
 .wide-video-container {
   width: 100%;
-  max-width: 1200px; /* Constrains video on wide screens */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* --- UNIFIED VIDEO STYLES --- */
-/* This one rule now styles ALL videos in the specials section */
-.specials video {
-  width: 100%; /* Fill their container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Fixes potential small gap below video */
+.specials img {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 10px;
-  border: 4px solid white;
+  /* OLD: 4px solid #FFFFFF */
+  border: 4px solid #f8f9fa;
   transition: all 0.3s ease;
+  /* Skeleton Loader */
+  background-color: #e9ecef;
+  animation: pulse-loader 1.5s infinite ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.specials video:hover {
-  border-color: #e0af1f;
+.specials img:hover {
+  border-color: #34568b;
   cursor: pointer;
 }
 
-/* REMOVED: .fries-holder video, .pizza-vid, .burger-vid styles
-   They are all replaced by the ".specials video" rule above.
-*/
-
-/* --- 📱 RESPONSIVENESS --- */
 @media (max-width: 768px) {
   section:first-of-type {
-    /* This pushes the content down below the tall, stacked mobile nav */
-    padding-top: 22em; /* Was 16em */
+    padding-top: 22em;
   }
 
   .order-menu p:first-child,

@@ -29,7 +29,6 @@
           <span class="location-text">Please enter your location</span>
         </div>
       </div>
-
       <nav class="navbar-right">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -39,28 +38,31 @@
         </ul>
       </nav>
     </header>
-    <section>
+
+    <section class="page-content">
       <div class="main-container">
         <h1>About This Project</h1>
-        <div style="margin-left: auto; margin-right: auto; width: fit-content">
+
+        <div class="links-container">
           <a
             target="_blank"
-            style="margin-right: 2em"
             href="https://github.com/daksheshsharma2409/quickbite"
-            ><img src="images/github-logo.png"
+            ><img src="images/github-logo.png" alt="GitHub Logo"
           /></a>
           <a
             target="_blank"
             href="https://daksheshsharma2409.github.io/quickbite/"
-            ><img src="images/website-logo.png" / ></a
-          >
+            ><img src="images/website-logo.png" alt="Website Logo"
+          /></a>
         </div>
-        <p style="text-align: center">
+
+        <p class="project-description">
           This Project was made under the capstone project for the subject SnW
           semester 1.
         </p>
+
         <div class="feature-container">
-          <div class="tcontainer">
+          <div class="about-card" id="features-card">
             <h2>Features of This Project</h2>
             <ul>
               <li>Styled media use on home page.</li>
@@ -71,7 +73,9 @@
               <li>Transition Animations with Navbar.</li>
             </ul>
           </div>
-          <div class="gitcontainer">
+
+          <div class="about-card" id="git-card">
+            <h2>Language Statistics</h2>
             <div class="gitstats">
               <div class="gitbar">
                 <div class="git-lang" id="html-bar"></div>
@@ -82,15 +86,15 @@
 
             <div class="git-text">
               <div class="ind-block">
-                <div id="html-color"></div>
+                <div class="color-box" id="html-color"></div>
                 <h5 class="text-block" id="html-text">HTML</h5>
               </div>
               <div class="ind-block">
-                <div id="css-color"></div>
+                <div class="color-box" id="css-color"></div>
                 <h5 class="text-block" id="css-text">CSS</h5>
               </div>
               <div class="ind-block">
-                <div id="js-color"></div>
+                <div class="color-box" id="js-color"></div>
                 <h5 class="text-block" id="js-text">JS</h5>
               </div>
             </div>

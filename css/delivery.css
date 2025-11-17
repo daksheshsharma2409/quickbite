@@ -1,26 +1,22 @@
-/* --- Page Content Wrapper --- */
 .page-content {
-  /* Pushes content below the fixed navbar */
   padding-top: 8em;
   padding-bottom: 4em;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* --- Main 2-Column Layout --- */
 .order-layout {
   display: flex;
   gap: 30px;
   padding: 0 2%;
 }
 
-/* --- 1. Category Navigation --- */
 .category-nav {
-  flex: 0 0 200px; /* Don't grow, don't shrink, start at 200px */
+  flex: 0 0 200px;
   position: sticky;
-  top: 8em; /* Stick 8em from top (below navbar) */
-  height: calc(100vh - 10em); /* Full height minus padding */
-  overflow-y: auto; /* Allow scrolling if many categories */
+  top: 8em;
+  height: calc(100vh - 10em);
+  overflow-y: auto;
 }
 
 .category-nav ul {
@@ -33,7 +29,7 @@
 .category-nav li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #2c3e50;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 12px 15px;
@@ -42,14 +38,13 @@
 }
 
 .category-nav li a:hover {
-  background-color: #555;
-  color: #e0af1f;
+  background-color: #f8f9fa;
+  color: #34568b;
 }
 
-/* --- 2. Main Menu Grid --- */
 .menu-grid {
-  flex: 1; /* Grow to fill remaining space */
-  min-width: 0; /* Fix flexbox overflow issue */
+  flex: 1;
+  min-width: 0;
 }
 
 .menu-category {
@@ -57,59 +52,57 @@
 }
 
 .menu-category h2 {
-  color: #e0af1f;
+  color: #34568b;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1em;
-  border-bottom: 2px solid #555;
+  /* OLD: #EAECEF */
+  border-bottom: 2px solid #dee2e6;
   padding-bottom: 0.5em;
 }
 
 .category-items {
-  /* This grid auto-fits cards */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* --- Menu Item Card --- */
 .menu-item-card {
-  background-color: #444;
+  background-color: #f8f9fa;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Keep rounded corners */
+  overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid #555;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .menu-item-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  border: 2px solid #e0af1f;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item-card img {
   width: 100%;
-  aspect-ratio: 1 / 1; /* <-- ADD THIS LINE */
-  /* height: 180px; */ /* <-- REMOVE OR COMMENT OUT THIS LINE */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  background-color: #555;
+  background-color: #e9ecef;
   animation: pulse-loader 1.5s infinite ease-in-out;
 }
 
 .item-info {
   padding: 15px;
-  flex-grow: 1; /* Allows text to take up space */
+  flex-grow: 1;
 }
 
 .item-info h3 {
-  color: white;
+  color: #2c3e50;
   font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
 .item-info p {
-  color: #ccc;
+  color: #596f82;
   font-size: 0.9rem;
   line-height: 1.4;
 }
@@ -122,14 +115,14 @@
 }
 
 .price {
-  color: #e0af1f;
+  color: #34568b;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
 .add-btn {
-  background-color: #e0af1f;
-  color: #343333;
+  background-color: #34568b;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
   border: none;
@@ -138,32 +131,30 @@
   height: 40px;
   cursor: pointer;
   transition: all 0.2s ease;
-  line-height: 40px; /* Center the "+" */
+  line-height: 40px;
 }
 
 .add-btn:hover {
   opacity: 0.85;
 }
 
-/* --- 📱 RESPONSIVENESS --- */
 @media (max-width: 900px) {
   .order-layout {
-    flex-direction: column; /* Stack nav and menu */
+    flex-direction: column;
   }
 
   .category-nav {
-    position: static; /* Remove sticky behavior */
+    position: static;
     height: auto;
     width: 100%;
     overflow-y: hidden;
   }
 
   .category-nav ul {
-    flex-direction: row; /* Make nav horizontal */
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  /* Push content below TALL mobile nav */
   .page-content {
     padding-top: 22em;
   }
