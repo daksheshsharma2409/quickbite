@@ -1,6 +1,6 @@
-let html_per = 60;
-let css_per = 37.2;
-let js_per = 2.8;
+let html_per = 62.1;
+let css_per = 35.9;
+let js_per = 2.0;
 
 document.getElementById("html-bar").style.width = `${html_per}%`;
 document.getElementById("css-bar").style.width = `${css_per}%`;
