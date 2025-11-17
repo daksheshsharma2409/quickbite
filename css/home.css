@@ -102,8 +102,18 @@ section:first-of-type {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
+.wide-video-container video {
+  border-radius: 20px;
+  border: 5px solid #f8f9fa;
+}
+
+.wide-video-container video:hover {
+  border: 5px solid #34568b;
+  transition: all 0.3s ease;
+}
 .specials img {
   width: 100%;
   height: auto;

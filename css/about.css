@@ -34,7 +34,7 @@
 }
 
 .links-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .project-description {
@@ -65,7 +65,7 @@
 
 .about-card:hover {
   border-color: #34568b;
-  transform: translateY(-5px);
+  transform: translateY(-15px);
   cursor: pointer;
 }
 
