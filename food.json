@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Classic Margherita",
     "category": "Pizza",
     "price": 300,
@@ -8,7 +7,6 @@
     "image": "images/f3.png"
   },
   {
-    "id": 2,
     "name": "Pepperoni Passion",
     "category": "Pizza",
     "price": 500,
@@ -16,7 +14,6 @@
     "image": "images/mi1.jpeg"
   },
   {
-    "id": 3,
     "name": "Veggie Supreme",
     "category": "Pizza",
     "price": 250,
@@ -24,7 +21,6 @@
     "image": "images/f6.png"
   },
   {
-    "id": 4,
     "name": "BBQ Chicken",
     "category": "Pizza",
     "price": 650,
@@ -32,7 +28,6 @@
     "image": "images/f1.png"
   },
   {
-    "id": 5,
     "name": "Classic Cheeseburger",
     "category": "Burgers",
     "price": 150,
@@ -40,7 +35,6 @@
     "image": "images/f2.png"
   },
   {
-    "id": 6,
     "name": "Fried Chicken Burger",
     "category": "Burgers",
     "price": 250,
@@ -48,7 +42,6 @@
     "image": "images/f7.png"
   },
   {
-    "id": 7,
     "name": "Spicy Jalapeño Grilled Chicken Burger",
     "category": "Burgers",
     "price": 300,
@@ -56,7 +49,6 @@
     "image": "images/f8.png"
   },
   {
-    "id": 8,
     "name": "Veggie Burger",
     "category": "Burgers",
     "price": 120,
@@ -64,7 +56,6 @@
     "image": "images/served_food.jpg"
   },
   {
-    "id": 9,
     "name": "Classic Fries",
     "category": "Fries",
     "price": 80,
@@ -72,7 +63,6 @@
     "image": "images/f5.png"
   },
   {
-    "id": 10,
     "name": "Cheesy Fries",
     "category": "Fries",
     "price": 100,
@@ -80,7 +70,6 @@
     "image": "images/cheesy_fries.png"
   },
   {
-    "id": 11,
     "name": "Peri Peri Fries",
     "category": "Fries",
     "price": 90,
@@ -88,7 +77,6 @@
     "image": "images/peri-peri-fries.jpg"
   },
   {
-    "id": 12,
     "name": "Loaded Supreme",
     "category": "Fries",
     "price": 150,
@@ -96,7 +84,6 @@
     "image": "images/loaded-fries.jpg"
   },
   {
-    "id": 13,
     "name": "Cheesy Garlic Bread",
     "category": "Miscellaneous",
     "price": 120,
@@ -104,7 +91,6 @@
     "image": "images/mi3.jpg"
   },
   {
-    "id": 14,
     "name": "Iced Coffee",
     "category": "Miscellaneous",
     "price": 180,
@@ -112,7 +98,6 @@
     "image": "images/mi7.jpg"
   },
   {
-    "id": 15,
     "name": "Choco Lava Cake",
     "category": "Miscellaneous",
     "price": 50,
@@ -120,7 +105,6 @@
     "image": "images/mi6.jpg"
   },
   {
-    "id": 16,
     "name": "Pizza Pockets",
     "category": "Miscellaneous",
     "price": 40,
