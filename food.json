@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Margherita",
+    "category": "Pizza",
+    "price": 300,
+    "description": "Fresh mozzarella, San Marzano tomatoes, and basil.",
+    "image": "images/f3.png"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Passion",
+    "category": "Pizza",
+    "price": 500,
+    "description": "Loaded with premium spicy pepperoni and mozzarella.",
+    "image": "images/mi1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Veggie Supreme",
+    "category": "Pizza",
+    "price": 250,
+    "description": "Onions, green peppers, mushrooms, and black olives.",
+    "image": "images/f6.png"
+  },
+  {
+    "id": 4,
+    "name": "BBQ Chicken",
+    "category": "Pizza",
+    "price": 650,
+    "description": "Grilled chicken, red onions, and tangy BBQ sauce.",
+    "image": "images/f1.png"
+  },
+  {
+    "id": 5,
+    "name": "Classic Cheeseburger",
+    "category": "Burgers",
+    "price": 150,
+    "description": "Juicy patty with cheddar cheese, lettuce, and tomato.",
+    "image": "images/f2.png"
+  },
+  {
+    "id": 6,
+    "name": "Fried Chicken Burger",
+    "category": "Burgers",
+    "price": 250,
+    "description": "Fried Chicken patty, Vegies, Swiss cheese, and house sauce.",
+    "image": "images/f7.png"
+  },
+  {
+    "id": 7,
+    "name": "Spicy Jalapeño Grilled Chicken Burger",
+    "category": "Burgers",
+    "price": 300,
+    "description": "Spicy grilled chicken patty, pepper jack cheese, jalapeños, and chipotle mayo.",
+    "image": "images/f8.png"
+  },
+  {
+    "id": 8,
+    "name": "Veggie Burger",
+    "category": "Burgers",
+    "price": 120,
+    "description": "Crispy Potato patty with Vegies.",
+    "image": "images/served_food.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Classic Fries",
+    "category": "Fries",
+    "price": 80,
+    "description": "Perfectly golden, crispy, and lightly salted.",
+    "image": "images/f5.png"
+  },
+  {
+    "id": 10,
+    "name": "Cheesy Fries",
+    "category": "Fries",
+    "price": 100,
+    "description": "Our classic fries smothered in hot cheese sauce.",
+    "image": "images/cheesy_fries.png"
+  },
+  {
+    "id": 11,
+    "name": "Peri Peri Fries",
+    "category": "Fries",
+    "price": 90,
+    "description": "Tossed in a spicy and tangy peri peri seasoning.",
+    "image": "images/peri-peri-fries.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Loaded Supreme",
+    "category": "Fries",
+    "price": 150,
+    "description": "Topped with cheese, bacon bits, and sour cream.",
+    "image": "images/loaded-fries.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Cheesy Garlic Bread",
+    "category": "Miscellaneous",
+    "price": 120,
+    "description": "Toasted with garlic butter and melted mozzarella.",
+    "image": "images/mi3.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Iced Coffee",
+    "category": "Miscellaneous",
+    "price": 180,
+    "description": "Rich cold brew, perfectly refreshing.",
+    "image": "images/mi7.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Choco Lava Cake",
+    "category": "Miscellaneous",
+    "price": 50,
+    "description": "Warm molten chocolate cake. The perfect finish.",
+    "image": "images/mi6.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pizza Pockets",
+    "category": "Miscellaneous",
+    "price": 40,
+    "description": "Pizza Pockets filled with pizza sauce, pepperoni, molten cheese.",
+    "image": "images/pizza-pockets.jpeg"
+  }
+]
