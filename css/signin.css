@@ -71,6 +71,13 @@ input:focus {
   font-size: 0.85rem;
 }
 
+.return-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+}
 .forgot-password {
   color: #34568b;
   text-decoration: none;
@@ -78,6 +85,16 @@ input:focus {
 }
 
 .forgot-password:hover {
+  color: #2c3e50;
+}
+
+.return-page {
+  color: #34568b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.return-page:hover {
   color: #2c3e50;
 }
 
