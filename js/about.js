@@ -4,30 +4,39 @@ const updateDOM = (data) => {
     console.error("No language data available to process.");
     return;
   }
+
+  // Include Python bytes
   const htmlBytes = data["HTML"] || 0;
   const cssBytes = data["CSS"] || 0;
   const jsBytes = data["JavaScript"] || 0;
+  const pyBytes = data["Python"] || 0;
 
-  const totalBytes = htmlBytes + cssBytes + jsBytes;
+  const totalBytes = htmlBytes + cssBytes + jsBytes + pyBytes;
 
   if (totalBytes === 0) {
     console.error(
-      "Total bytes for HTML/CSS/JS is zero. Cannot calculate percentages."
+      "Total bytes for languages is zero. Cannot calculate percentages."
     );
     return;
   }
 
+  // Calculate percentages
   const html_per = ((htmlBytes * 100) / totalBytes).toFixed(2);
   const css_per = ((cssBytes * 100) / totalBytes).toFixed(2);
   const js_per = ((jsBytes * 100) / totalBytes).toFixed(2);
+  const py_per = ((pyBytes * 100) / totalBytes).toFixed(2);
 
+  // Update Text
   document.getElementById("html-text").innerText = `HTML : ${html_per}%`;
   document.getElementById("css-text").innerText = `CSS : ${css_per}%`;
   document.getElementById("js-text").innerText = `JS : ${js_per}%`;
+  document.getElementById("py-text").innerText = `Python : ${py_per}%`;
 
+  // Update Bars
   document.getElementById("html-bar").style.width = `${html_per}%`;
   document.getElementById("css-bar").style.width = `${css_per}%`;
   document.getElementById("js-bar").style.width = `${js_per}%`;
+  document.getElementById("py-bar").style.width = `${py_per}%`;
 };
 
 fetch("https://api.github.com/repos/daksheshsharma2409/quickbite/languages")
@@ -64,5 +73,6 @@ fetch("https://api.github.com/repos/daksheshsharma2409/quickbite/languages")
       });
   });
 document.getElementById("html-color").style.backgroundColor = "#E44D26";
-document.getElementById("css-color").style.backgroundColor = "#1572B6";
+document.getElementById("css-color").style.backgroundColor = "#311656";
 document.getElementById("js-color").style.backgroundColor = "#F7DF1E";
+document.getElementById("py-color").style.backgroundColor = "#3572a5";

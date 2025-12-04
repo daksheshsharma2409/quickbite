@@ -109,10 +109,14 @@
   background-color: #e44d26;
 }
 #css-bar {
-  background-color: #1572b6;
+  background-color: #311656;
 }
 #js-bar {
   background-color: #f7df1e;
+}
+
+#py-bar {
+  background-color: #3572a5;
 }
 
 .git-text {
