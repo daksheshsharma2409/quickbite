@@ -17,6 +17,9 @@ fetch("https://api.github.com/repos/daksheshsharma2409/quickbite/languages")
     document.getElementById("html-bar").style.width = `${html_per}%`;
     document.getElementById("css-bar").style.width = `${css_per}%`;
     document.getElementById("js-bar").style.width = `${js_per}%`;
+  })
+  .catch((error) => {
+    console.error("Fetch error:", error.message);
   });
 
 document.getElementById("html-color").style.backgroundColor = "#E44D26";
