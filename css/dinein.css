@@ -153,10 +153,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  /* OLD: 2px solid #FFFFFF */
   border: 2px solid #f8f9fa;
   transition: all 0.3s ease;
-  /* Skeleton Loader */
   background-color: #e9ecef;
   animation: pulse-loader 1.5s infinite ease-in-out;
 }

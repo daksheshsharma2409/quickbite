@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Menu</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/delivery.css" />
-    <title>QuickBite - Order Online</title>
     <link
       rel="shortcut icon"
       href="images/pngtree-pizza-logo-transparent-image-free-for-online-download-png-image_16593606-removebg-preview.png"
@@ -40,37 +40,41 @@
       </nav>
     </header>
 
-    <div class="page-content">
+    <section class="page-content">
       <div class="order-layout">
-        <nav class="category-nav">
-          <ul>
-            <li><a href="#pizza">Pizza</a></li>
-            <li><a href="#burgers">Burgers</a></li>
-            <li><a href="#fries">Fries</a></li>
-            <li><a href="#misc">Miscellaneous</a></li>
+        <div class="category-nav">
+          <ul class="category-list">
+            <li><a href="#pizza-menu">Pizza</a></li>
+            <li><a href="#burgers-menu">Burgers</a></li>
+            <li><a href="#fries-menu">Fries</a></li>
+            <li><a href="#misc-menu">Miscellaneous</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <main class="menu-grid">
-          <section id="pizza" class="menu-category">
+        <div class="menu-grid">
+          <div class="menu-category" id="pizza-menu">
             <h2>Pizza</h2>
             <div class="category-items" id="pizza-item-menu"></div>
-          </section>
-          <section id="burgers" class="menu-category">
+          </div>
+
+          <div class="menu-category" id="burgers-menu">
             <h2>Burgers</h2>
             <div class="category-items" id="burger-item-menu"></div>
-          </section>
-          <section id="fries" class="menu-category">
+          </div>
+
+          <div class="menu-category" id="fries-menu">
             <h2>Fries</h2>
             <div class="category-items" id="fries-item-menu"></div>
-          </section>
-          <section id="misc" class="menu-category">
+          </div>
+
+          <div class="menu-category" id="misc-menu">
             <h2>Miscellaneous</h2>
             <div class="category-items" id="misc-item-menu"></div>
-          </section>
-        </main>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
     <script src="js/delivery.js"></script>
   </body>
 </html>
