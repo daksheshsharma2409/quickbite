@@ -42,7 +42,7 @@ fetch("https://api.github.com/repos/daksheshsharma2409/quickbite/languages")
         document.getElementById("js-bar").style.width = `${js_per}%`;
       })
       .catch((error) => {
-        console.log("Error Fetching Stats");
+        console.error("Fetch error:", error.message);
       });
   });
 
