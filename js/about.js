@@ -5,7 +5,6 @@ const updateDOM = (data) => {
     return;
   }
 
-  // Include Python bytes
   const htmlBytes = data["HTML"] || 0;
   const cssBytes = data["CSS"] || 0;
   const jsBytes = data["JavaScript"] || 0;
@@ -20,19 +19,15 @@ const updateDOM = (data) => {
     return;
   }
 
-  // Calculate percentages
   const html_per = ((htmlBytes * 100) / totalBytes).toFixed(2);
   const css_per = ((cssBytes * 100) / totalBytes).toFixed(2);
   const js_per = ((jsBytes * 100) / totalBytes).toFixed(2);
   const py_per = ((pyBytes * 100) / totalBytes).toFixed(2);
 
-  // Update Text
   document.getElementById("html-text").innerText = `HTML : ${html_per}%`;
   document.getElementById("css-text").innerText = `CSS : ${css_per}%`;
   document.getElementById("js-text").innerText = `JS : ${js_per}%`;
   document.getElementById("py-text").innerText = `Python : ${py_per}%`;
-
-  // Update Bars
   document.getElementById("html-bar").style.width = `${html_per}%`;
   document.getElementById("css-bar").style.width = `${css_per}%`;
   document.getElementById("js-bar").style.width = `${js_per}%`;
